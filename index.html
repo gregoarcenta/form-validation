@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form Validations</title>
+      <script
+         src="https://kit.fontawesome.com/d7ed5ab13b.js"
+         crossorigin="anonymous"
+      ></script>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./styles/normalizer.css" />
+      <link rel="stylesheet" href="./styles/app.css" />
+   </head>
+   <body>
+      <div class="container">
+         <form class="form" id="form">
+            <!--********Input User********-->
+            <div class="form-group">
+               <label for="user">Usuario</label>
+               <div class="form-group-input">
+                  <input
+                     class="form-input"
+                     type="text"
+                     name="user"
+                     id="user"
+                     placeholder="alex123"
+                     autofocus
+                  />
+                  <i class="fas fa-times-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+               </div>
+               <p class="form-input-error none">
+                  El usuario tiene que ser de 4 a 16 digitos y solo puede contener
+                  numeros, letras y guion bajo*
+               </p>
+            </div>
+            <!--********Input Name********-->
+            <div class="form-group">
+               <label for="name">Nombre</label>
+               <div class="form-group-input">
+                  <input
+                     class="form-input"
+                     type="text"
+                     name="name"
+                     id="name"
+                     placeholder="Alex Arcentales"
+                  />
+                  <i class="fas fa-times-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+               </div>
+               <p class="form-input-error none">
+                  El nombre solo puede contener letras y espacios*
+               </p>
+            </div>
+            <!--********Input Password********-->
+            <div class="form-group">
+               <label for="password">Contraseña</label>
+               <div class="form-group-input">
+                  <input
+                     class="form-input"
+                     type="password"
+                     name="password"
+                     id="password"
+                  />
+                  <i class="fas fa-times-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+               </div>
+               <p class="form-input-error none">
+                  La contraseña tiene que ser de 4 a 12 digitos*
+               </p>
+            </div>
+            <!--********Input Repeat password********-->
+            <div class="form-group">
+               <label for="password-repeat">Repetir Contraseña</label>
+               <div class="form-group-input">
+                  <input
+                     class="form-input"
+                     type="password"
+                     name="password2"
+                     id="password2"
+                  />
+                  <i class="fas fa-times-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+               </div>
+               <p class="form-input-error none">
+                  Ambas contraseñas deben ser iguales*
+               </p>
+            </div>
+            <!--********Input Email********-->
+            <div class="form-group">
+               <label for="email">Email</label>
+               <div class="form-group-input">
+                  <input
+                     class="form-input"
+                     type="email"
+                     name="email"
+                     id="email"
+                     placeholder="alex@correo.com"
+                  />
+                  <i class="fas fa-times-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+               </div>
+               <p class="form-input-error none">
+                  El correo solo puede contener letras, numeros, puntos, guiones y
+                  guion bajo*
+               </p>
+            </div>
+            <!--********Input Phone********-->
+            <div class="form-group">
+               <label for="phone">Teléfono</label>
+               <div class="form-group-input">
+                  <input
+                     class="form-input"
+                     type="number"
+                     name="phone"
+                     id="phone"
+                     placeholder="0983657364"
+                  />
+                  <i class="fas fa-times-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+               </div>
+               <p class="form-input-error none">
+                  El telefono solo puede contener numeros y el maximo son 14 digitos*
+               </p>
+            </div>
+            <!--********Input Conditions********-->
+            <div class="form-group">
+               <input
+                  class="form-input-checkbox"
+                  type="checkbox"
+                  name="conditions"
+                  id="conditions"
+               />
+               <label for="conditions">Acepto los Terminos y Condiciones</label>
+            </div>
+            <!--********Error Message Form********-->
+            <div class="form-error-message none">
+               <p>
+                  <i class="fas fa-exclamation-triangle"></i><b>Error:</b>Por favor
+                  rellena el formulario correctamente
+               </p>
+            </div>
+            <!--********Input Submit********-->
+            <div class="form-group-submit">
+               <input class="form-btn-submit" type="submit" value="Enviar" />
+            </div>
+            <!--********Message Submit********-->
+            <div class="form-message-submit none">
+               <p class="form-message" id="form-message">
+                  Formulario enviado exitosamente
+               </p>
+            </div>
+         </form>
+      </div>
+      <script src="./js/app.js" type="module"></script>
+   </body>
+</html>
